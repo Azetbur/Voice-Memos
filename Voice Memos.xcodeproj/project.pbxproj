@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB06170128B27CA700022422 /* Voice_MemosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06170028B27CA700022422 /* Voice_MemosApp.swift */; };
+		DB06170328B27CA700022422 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06170228B27CA700022422 /* ContentView.swift */; };
+		DB06170528B27CA800022422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB06170428B27CA800022422 /* Assets.xcassets */; };
+		DB06170828B27CA800022422 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB06170728B27CA800022422 /* Preview Assets.xcassets */; };
+		DB06171228B27CA800022422 /* Voice_MemosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06171128B27CA800022422 /* Voice_MemosTests.swift */; };
+		DB06171C28B27CA800022422 /* Voice_MemosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06171B28B27CA800022422 /* Voice_MemosUITests.swift */; };
+		DB06171E28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06171D28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB06170E28B27CA800022422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB0616F528B27CA700022422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB0616FC28B27CA700022422;
+			remoteInfo = "Voice Memos";
+		};
+		DB06171828B27CA800022422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB0616F528B27CA700022422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB0616FC28B27CA700022422;
+			remoteInfo = "Voice Memos";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB0616FD28B27CA700022422 /* Voice Memos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice Memos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB06170028B27CA700022422 /* Voice_MemosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_MemosApp.swift; sourceTree = "<group>"; };
+		DB06170228B27CA700022422 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB06170428B27CA800022422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB06170728B27CA800022422 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB06170D28B27CA800022422 /* Voice MemosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voice MemosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB06171128B27CA800022422 /* Voice_MemosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_MemosTests.swift; sourceTree = "<group>"; };
+		DB06171728B27CA800022422 /* Voice MemosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voice MemosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB06171B28B27CA800022422 /* Voice_MemosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_MemosUITests.swift; sourceTree = "<group>"; };
+		DB06171D28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_MemosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB0616FA28B27CA700022422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB06170A28B27CA800022422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB06171428B27CA800022422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB0616F428B27CA700022422 = {
+			isa = PBXGroup;
+			children = (
+				DB0616FF28B27CA700022422 /* Voice Memos */,
+				DB06171028B27CA800022422 /* Voice MemosTests */,
+				DB06171A28B27CA800022422 /* Voice MemosUITests */,
+				DB0616FE28B27CA700022422 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB0616FE28B27CA700022422 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB0616FD28B27CA700022422 /* Voice Memos.app */,
+				DB06170D28B27CA800022422 /* Voice MemosTests.xctest */,
+				DB06171728B27CA800022422 /* Voice MemosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB0616FF28B27CA700022422 /* Voice Memos */ = {
+			isa = PBXGroup;
+			children = (
+				DB06170028B27CA700022422 /* Voice_MemosApp.swift */,
+				DB06170228B27CA700022422 /* ContentView.swift */,
+				DB06170428B27CA800022422 /* Assets.xcassets */,
+				DB06170628B27CA800022422 /* Preview Content */,
+			);
+			path = "Voice Memos";
+			sourceTree = "<group>";
+		};
+		DB06170628B27CA800022422 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB06170728B27CA800022422 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB06171028B27CA800022422 /* Voice MemosTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB06171128B27CA800022422 /* Voice_MemosTests.swift */,
+			);
+			path = "Voice MemosTests";
+			sourceTree = "<group>";
+		};
+		DB06171A28B27CA800022422 /* Voice MemosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB06171B28B27CA800022422 /* Voice_MemosUITests.swift */,
+				DB06171D28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift */,
+			);
+			path = "Voice MemosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB0616FC28B27CA700022422 /* Voice Memos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB06172128B27CA800022422 /* Build configuration list for PBXNativeTarget "Voice Memos" */;
+			buildPhases = (
+				DB0616F928B27CA700022422 /* Sources */,
+				DB0616FA28B27CA700022422 /* Frameworks */,
+				DB0616FB28B27CA700022422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Voice Memos";
+			productName = "Voice Memos";
+			productReference = DB0616FD28B27CA700022422 /* Voice Memos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB06170C28B27CA800022422 /* Voice MemosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB06172428B27CA800022422 /* Build configuration list for PBXNativeTarget "Voice MemosTests" */;
+			buildPhases = (
+				DB06170928B27CA800022422 /* Sources */,
+				DB06170A28B27CA800022422 /* Frameworks */,
+				DB06170B28B27CA800022422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB06170F28B27CA800022422 /* PBXTargetDependency */,
+			);
+			name = "Voice MemosTests";
+			productName = "Voice MemosTests";
+			productReference = DB06170D28B27CA800022422 /* Voice MemosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB06171628B27CA800022422 /* Voice MemosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB06172728B27CA800022422 /* Build configuration list for PBXNativeTarget "Voice MemosUITests" */;
+			buildPhases = (
+				DB06171328B27CA800022422 /* Sources */,
+				DB06171428B27CA800022422 /* Frameworks */,
+				DB06171528B27CA800022422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB06171928B27CA800022422 /* PBXTargetDependency */,
+			);
+			name = "Voice MemosUITests";
+			productName = "Voice MemosUITests";
+			productReference = DB06171728B27CA800022422 /* Voice MemosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB0616F528B27CA700022422 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					DB0616FC28B27CA700022422 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					DB06170C28B27CA800022422 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = DB0616FC28B27CA700022422;
+					};
+					DB06171628B27CA800022422 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = DB0616FC28B27CA700022422;
+					};
+				};
+			};
+			buildConfigurationList = DB0616F828B27CA700022422 /* Build configuration list for PBXProject "Voice Memos" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB0616F428B27CA700022422;
+			productRefGroup = DB0616FE28B27CA700022422 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB0616FC28B27CA700022422 /* Voice Memos */,
+				DB06170C28B27CA800022422 /* Voice MemosTests */,
+				DB06171628B27CA800022422 /* Voice MemosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB0616FB28B27CA700022422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB06170828B27CA800022422 /* Preview Assets.xcassets in Resources */,
+				DB06170528B27CA800022422 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB06170B28B27CA800022422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB06171528B27CA800022422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB0616F928B27CA700022422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB06170328B27CA700022422 /* ContentView.swift in Sources */,
+				DB06170128B27CA700022422 /* Voice_MemosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB06170928B27CA800022422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB06171228B27CA800022422 /* Voice_MemosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB06171328B27CA800022422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB06171C28B27CA800022422 /* Voice_MemosUITests.swift in Sources */,
+				DB06171E28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB06170F28B27CA800022422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB0616FC28B27CA700022422 /* Voice Memos */;
+			targetProxy = DB06170E28B27CA800022422 /* PBXContainerItemProxy */;
+		};
+		DB06171928B27CA800022422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB0616FC28B27CA700022422 /* Voice Memos */;
+			targetProxy = DB06171828B27CA800022422 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB06171F28B27CA800022422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB06172028B27CA800022422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB06172228B27CA800022422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Voice Memos/Preview Content\"";
+				DEVELOPMENT_TEAM = HPGVYA8AWP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "srtka.com.Voice-Memos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB06172328B27CA800022422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Voice Memos/Preview Content\"";
+				DEVELOPMENT_TEAM = HPGVYA8AWP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "srtka.com.Voice-Memos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB06172528B27CA800022422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPGVYA8AWP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "srtka.com.Voice-MemosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voice Memos.app/Voice Memos";
+			};
+			name = Debug;
+		};
+		DB06172628B27CA800022422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPGVYA8AWP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "srtka.com.Voice-MemosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voice Memos.app/Voice Memos";
+			};
+			name = Release;
+		};
+		DB06172828B27CA800022422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPGVYA8AWP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "srtka.com.Voice-MemosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Voice Memos";
+			};
+			name = Debug;
+		};
+		DB06172928B27CA800022422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPGVYA8AWP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "srtka.com.Voice-MemosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Voice Memos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB0616F828B27CA700022422 /* Build configuration list for PBXProject "Voice Memos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB06171F28B27CA800022422 /* Debug */,
+				DB06172028B27CA800022422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB06172128B27CA800022422 /* Build configuration list for PBXNativeTarget "Voice Memos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB06172228B27CA800022422 /* Debug */,
+				DB06172328B27CA800022422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB06172428B27CA800022422 /* Build configuration list for PBXNativeTarget "Voice MemosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB06172528B27CA800022422 /* Debug */,
+				DB06172628B27CA800022422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB06172728B27CA800022422 /* Build configuration list for PBXNativeTarget "Voice MemosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB06172828B27CA800022422 /* Debug */,
+				DB06172928B27CA800022422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB0616F528B27CA700022422 /* Project object */;
+}
