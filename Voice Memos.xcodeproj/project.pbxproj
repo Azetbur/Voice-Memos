@@ -14,6 +14,14 @@
 		DB06171228B27CA800022422 /* Voice_MemosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06171128B27CA800022422 /* Voice_MemosTests.swift */; };
 		DB06171C28B27CA800022422 /* Voice_MemosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06171B28B27CA800022422 /* Voice_MemosUITests.swift */; };
 		DB06171E28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06171D28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift */; };
+		DB06172E28B2829300022422 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06172D28B2829300022422 /* Memo.swift */; };
+		DB06173028B2831400022422 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06172F28B2831400022422 /* Row.swift */; };
+		DB06173228B2833F00022422 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06173128B2833F00022422 /* Detail.swift */; };
+		DB06173428B2854A00022422 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06173328B2854900022422 /* EditButton.swift */; };
+		DB06173D28B6013400022422 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06173C28B6013400022422 /* RecordButton.swift */; };
+		DB1C09D828B64CFF00264C8B /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1C09D728B64CFF00264C8B /* BottomBar.swift */; };
+		DB1C09DB28B77D7C00264C8B /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1C09DA28B77D7C00264C8B /* AudioRecorder.swift */; };
+		DB1C09DD28BCBE0D00264C8B /* Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1C09DC28BCBE0D00264C8B /* Holder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,15 @@
 		DB06171728B27CA800022422 /* Voice MemosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voice MemosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB06171B28B27CA800022422 /* Voice_MemosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_MemosUITests.swift; sourceTree = "<group>"; };
 		DB06171D28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_MemosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB06172D28B2829300022422 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		DB06172F28B2831400022422 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		DB06173128B2833F00022422 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		DB06173328B2854900022422 /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
+		DB06173C28B6013400022422 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		DB1C09D728B64CFF00264C8B /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
+		DB1C09D928B74D3800264C8B /* Voice-Memos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Voice-Memos-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DB1C09DA28B77D7C00264C8B /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		DB1C09DC28BCBE0D00264C8B /* Holder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +111,10 @@
 		DB0616FF28B27CA700022422 /* Voice Memos */ = {
 			isa = PBXGroup;
 			children = (
+				DB1C09D928B74D3800264C8B /* Voice-Memos-Info.plist */,
+				DB06172A28B27CC000022422 /* Views */,
+				DB06172C28B2826B00022422 /* Model */,
 				DB06170028B27CA700022422 /* Voice_MemosApp.swift */,
-				DB06170228B27CA700022422 /* ContentView.swift */,
 				DB06170428B27CA800022422 /* Assets.xcassets */,
 				DB06170628B27CA800022422 /* Preview Content */,
 			);
@@ -125,6 +144,29 @@
 				DB06171D28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift */,
 			);
 			path = "Voice MemosUITests";
+			sourceTree = "<group>";
+		};
+		DB06172A28B27CC000022422 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB06170228B27CA700022422 /* ContentView.swift */,
+				DB06172F28B2831400022422 /* Row.swift */,
+				DB06173128B2833F00022422 /* Detail.swift */,
+				DB06173328B2854900022422 /* EditButton.swift */,
+				DB1C09D728B64CFF00264C8B /* BottomBar.swift */,
+				DB06173C28B6013400022422 /* RecordButton.swift */,
+				DB1C09DA28B77D7C00264C8B /* AudioRecorder.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB06172C28B2826B00022422 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB06172D28B2829300022422 /* Memo.swift */,
+				DB1C09DC28BCBE0D00264C8B /* Holder.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB06173028B2831400022422 /* Row.swift in Sources */,
+				DB1C09DB28B77D7C00264C8B /* AudioRecorder.swift in Sources */,
+				DB06173428B2854A00022422 /* EditButton.swift in Sources */,
+				DB1C09DD28BCBE0D00264C8B /* Holder.swift in Sources */,
+				DB06173228B2833F00022422 /* Detail.swift in Sources */,
+				DB06173D28B6013400022422 /* RecordButton.swift in Sources */,
+				DB1C09D828B64CFF00264C8B /* BottomBar.swift in Sources */,
+				DB06172E28B2829300022422 /* Memo.swift in Sources */,
 				DB06170328B27CA700022422 /* ContentView.swift in Sources */,
 				DB06170128B27CA700022422 /* Voice_MemosApp.swift in Sources */,
 			);
@@ -420,11 +470,16 @@
 				DEVELOPMENT_TEAM = HPGVYA8AWP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Voice-Memos-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,11 +504,16 @@
 				DEVELOPMENT_TEAM = HPGVYA8AWP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Voice-Memos-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
