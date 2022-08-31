@@ -3,7 +3,7 @@ import AVKit
 import AVFoundation
 
 // MARK: enum RecordMode
-enum RecordMode {
+enum Mode {
     case active, inactive
 
     var isActive: Bool {
@@ -23,39 +23,49 @@ enum RecordMode {
 // MARK: RecordButton
 struct RecordButton: View {
     
-    @Binding var mode: RecordMode
+    @Binding var recordMode: Mode
+    
+    @Binding var nibbleMode: Mode
+    
+    @State var isAnimating = false
     
     var action: () -> Void = {}
     
     var body: some View {
         Button {
+            //isAnimating = true
             withAnimation(.easeInOut) {
-                mode.toggle()
+                recordMode.toggle()
             }
-            AudioServicesPlaySystemSound(mode.isActive ? 1113 : 1114)
+            withAnimation(.easeOut) {
+                nibbleMode.toggle()
+                //isAnimating = false
+            }
+            AudioServicesPlaySystemSound(recordMode.isActive ? 1113 : 1114)
             action()
+            
         } label: {
-            RoundedRectangle(cornerRadius: mode.isActive ? 5 : 50)
+            RoundedRectangle(cornerRadius: recordMode.isActive ? 5 : 50)
                 .foregroundColor(.red)
-                .scaleEffect(mode.isActive ? 0.5 : 1)
+                .scaleEffect(recordMode.isActive ? 0.5 : 1)
                 .frame(width: 48, height: 48)
                 .overlay(
                     Circle()
                         .strokeBorder(Color.white, lineWidth: 2.75)
                         .frame(width: 60, height: 100)
                 )
-        }
+        }.disabled(isAnimating)
     }
 }
         
 
 // MARK: Preview
 
-struct SelectButton_Previews: PreviewProvider {
+/*struct SelectButton_Previews: PreviewProvider {
     static var previews: some View {
-        RecordButton(mode: .constant(.active))
+        RecordButton(recordMode: .constant(.active))
             .preferredColorScheme(.dark)
-        RecordButton(mode: .constant(.inactive))
+        RecordButton(recordMode: .constant(.inactive))
             .preferredColorScheme(.dark)
     }
-}
+}*/

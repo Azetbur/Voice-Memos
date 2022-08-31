@@ -5,7 +5,11 @@ struct BottomBar: View {
     
     @EnvironmentObject var holder: Holder
     
-    @Binding var mode: RecordMode
+    @Binding var recordMode: Mode
+    
+    @Binding var editMode: EditMode
+    
+    @State private var nibbleMode: Mode = .inactive
     
     @State var recorder = AudioRecorder()
     
@@ -20,25 +24,33 @@ struct BottomBar: View {
     var meterTimer = Timer.publish(every: 0.001, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        if !isSearching {
+        if !isSearching && !editMode.isEditing {
         VStack {
             Spacer()
             ZStack(alignment: .bottom) {
                 
-                Rectangle()
+                RoundedRectangle(cornerRadius: recordMode.isActive ? 10 : 0)
                     .foregroundColor(Color(red: 28/255, green: 28/255, blue: 30/255))
                     .frame(maxWidth: .infinity,
-                           maxHeight: mode.isActive ? 290 : 100)
+                           maxHeight: recordMode.isActive ? 290 : 100)
+            
                 
                 VStack {
-                    if showText == true {
+                    if nibbleMode.isActive {
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width: 35, height: 5)
                             .foregroundColor(Color.secondary)
                             .opacity(0.5)
                             .padding(.bottom, 270)
+                            .transition(.asymmetric(insertion: .move(edge: .bottom).combined(with: .opacity), removal: .identity))
+                            .transition(.move(edge: .bottom).combined(with: .opacity))
+                            .opacity(nibbleMode.isActive ? 1 : 0)
+                            //.frame(height: nibbleMode.isActive ? 100 : 20)
+                            .padding(.bottom, 8)
                     }
-                }.padding(.bottom, mode.isActive ? 30 : 0)
+                }
+                //.animation(.easeIn(duration: 0.2).delay(0.5), value: nibbleMode)
+                
                 
                 VStack {
                     if showText == true {
@@ -51,19 +63,19 @@ struct BottomBar: View {
                             .font(.subheadline)
                             .foregroundColor(Color.secondary)
                             .padding(.bottom, 188)
-                            .frame(width: 100)
                             .onReceive(meterTimer) {_ in
                                 timerText = recorder.currentTime.time()
                             }
+                            .monospacedDigit()
                     }
-                }.opacity(mode.isActive ? 1 : 0)
-                .animation(.easeIn(duration: 0.2).delay(0.5), value: mode)
+                }.opacity(recordMode.isActive ? 1 : 0)
+                .animation(.easeIn(duration: 0.2).delay(0.5), value: recordMode)
                 
                 
                 
-                RecordButton(mode: $mode) {
+                RecordButton(recordMode: $recordMode, nibbleMode: $nibbleMode) {
                     DispatchQueue.main.async {
-                        if mode == .active {
+                        if recordMode == .active {
                             showText = true
                             recorder.startRecording(recNum: holder.nextRecNum) //<- This is making the above animation have a delay
                         } else {

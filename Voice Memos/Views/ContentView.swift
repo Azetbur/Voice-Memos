@@ -7,12 +7,10 @@ struct ContentView: View {
     
     @StateObject var holder = Holder()
     
-    @FocusState var searchFocus : Bool
-    
     @State private var selection = Set<Memo.ID>()
     
     @State private var editMode: EditMode = .inactive
-    @State private var recordMode: RecordMode = .inactive
+    @State private var recordMode: Mode = .inactive
     @State private var searchText = ""
     
     var searchResults: [Memo] {
@@ -30,7 +28,7 @@ struct ContentView: View {
             
             NavigationView {
                 
-                List {
+                List (selection: $selection) {
                     
                     ForEach (searchResults) {memo in
                         
@@ -50,10 +48,11 @@ struct ContentView: View {
                 .toolbar(content: toolbarContent)
                 .environment(\.editMode, $editMode)
                 
-            }
+            }.disabled(recordMode.isActive)
+                .opacity(recordMode.isActive ? 0.5 : 1)
             
             // MARK: BottomBar
-            BottomBar(mode: $recordMode)
+            BottomBar(recordMode: $recordMode, editMode: $editMode)
             .environmentObject(holder)
             
         }.onAppear(perform: holder.refresh)
@@ -79,11 +78,31 @@ extension ContentView {
         
         ToolbarItemGroup(placement: .bottomBar) {
             
+            // MARK: ShareButton
+            if editMode == .active {
+                Button(action: {
+                    //share action
+                }) {
+                    Image(systemName: "square.and.arrow.up")
+                }//.disabled(selection.isEmpty)
+            }
+            
             // MARK: DeleteButton
             if editMode == .active {
                 Button(action: {
                     selection.forEach { objectID in
-                        memos.removeAll(where: {$0.id == objectID})
+                        holder.memos.removeAll(where: {$0.id == objectID})
+                        // TODO: Delete the actual file
+                        
+                        let fileManager = FileManager.default
+                        let documentDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+                        
+                        do {
+                            try fileManager.removeItem(at: )
+                        } catch {
+                            fatalError("\(error)")
+                        }
+                        
                     }
                     selection = []
                     editMode = .inactive
@@ -91,7 +110,6 @@ extension ContentView {
                     Image(systemName: "trash")
                 }//.disabled(selection.isEmpty)
             }
-            
             
         }
     }
