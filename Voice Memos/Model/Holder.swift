@@ -40,8 +40,12 @@ class Holder: ObservableObject {
                 
                 let audioAsset = AVURLAsset.init(url: audio, options: nil)
                 let duration = audioAsset.duration.seconds
+                
+                let timeInterval : TimeInterval = duration
+                let seconds = String(format: "%02d", Int(timeInterval) % 60)
+                let minutes = String(format: "%02d", (Int(timeInterval) / 60) % 60)
                     
-                let memo = Memo(fileURL: audio, createdAt: getCreationDate(for: audio), time: time, duration: duration.formatted())
+                let memo = Memo(fileURL: audio, createdAt: getCreationDate(for: audio), time: time, duration: String("\(minutes):\(seconds)"))
                     
                 memos.append(memo)
                     

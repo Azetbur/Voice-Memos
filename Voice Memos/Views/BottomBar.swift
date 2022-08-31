@@ -13,12 +13,14 @@ struct BottomBar: View {
     
     @State var showNibble = false
     
-   // @Environment(\.isSearching) private var isSearching
+    @State var timerText = "00:00:00"
     
-    //@State var timer = AudioRecorder.
+    @Environment(\.isSearching) private var isSearching //This does not seem to do anything
+    
+    var meterTimer = Timer.publish(every: 0.001, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        if true {
+        if !isSearching {
         VStack {
             Spacer()
             ZStack(alignment: .bottom) {
@@ -45,10 +47,14 @@ struct BottomBar: View {
                             .fontWeight(.bold)
                             .padding(.bottom, 10)
                         
-                        Text("\(recorder.currentTime())")
+                        Text(timerText)
                             .font(.subheadline)
                             .foregroundColor(Color.secondary)
                             .padding(.bottom, 188)
+                            .frame(width: 100)
+                            .onReceive(meterTimer) {_ in
+                                timerText = recorder.currentTime.time()
+                            }
                     }
                 }.opacity(mode.isActive ? 1 : 0)
                 .animation(.easeIn(duration: 0.2).delay(0.5), value: mode)
@@ -76,8 +82,8 @@ struct BottomBar: View {
     }
 }
 
-struct BottomBar_Previews: PreviewProvider {
+/*struct BottomBar_Previews: PreviewProvider {
     static var previews: some View {
         BottomBar(mode: .constant(.inactive))
     }
-}
+}*/

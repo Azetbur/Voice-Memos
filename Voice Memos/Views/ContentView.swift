@@ -49,15 +49,15 @@ struct ContentView: View {
                 .navigationTitle("All Recordings")
                 .toolbar(content: toolbarContent)
                 .environment(\.editMode, $editMode)
-                .searchable(text: $searchText)
                 
             }
             
             // MARK: BottomBar
             BottomBar(mode: $recordMode)
-                .environmentObject(holder)
+            .environmentObject(holder)
             
         }.onAppear(perform: holder.refresh)
+        .searchable(text: $searchText)
     }
     
     

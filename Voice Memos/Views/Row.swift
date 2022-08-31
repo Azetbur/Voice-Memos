@@ -10,10 +10,11 @@ struct Row: View {
             Spacer()
             HStack {
                 Text(memo.time)
+                Spacer()
                 Text(memo.duration)
             }.foregroundColor(.secondary)
             .font(.subheadline)
-        }.padding(5)
+        }//.padding(5)
     }
 }
 

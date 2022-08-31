@@ -5,13 +5,9 @@ class AudioRecorder {
     
     var audioRecorder: AVAudioRecorder?
     
-    //var recordings = [Recording]()
-    
     var documentPath : URL
     
     var settings : [String : Int]
-    
-    private var meterTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     init() {
         
@@ -34,19 +30,8 @@ class AudioRecorder {
         ]
     }
     
-    /*func startSession(recNum : Int) {
-        do {
-            let audioFilename = documentPath.appendingPathComponent("New Recording \(recNum).m4a")
-            audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
-        } catch {
-            print("Could not start recording")
-        }
-        
-        
-    }*/
-    
-    func currentTime () -> (String) {
-        return(String(audioRecorder?.currentTime ?? .zero))
+    var currentTime : Double {
+        (audioRecorder?.currentTime ?? .zero)
     }
     
     func startRecording(recNum : Int) {
