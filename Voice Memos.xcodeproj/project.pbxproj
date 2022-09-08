@@ -16,13 +16,13 @@
 		DB06171E28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06171D28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift */; };
 		DB06172E28B2829300022422 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06172D28B2829300022422 /* Memo.swift */; };
 		DB06173028B2831400022422 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06172F28B2831400022422 /* Row.swift */; };
-		DB06173228B2833F00022422 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06173128B2833F00022422 /* Detail.swift */; };
 		DB06173428B2854A00022422 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06173328B2854900022422 /* EditButton.swift */; };
 		DB06173D28B6013400022422 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06173C28B6013400022422 /* RecordButton.swift */; };
 		DB1C09D828B64CFF00264C8B /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1C09D728B64CFF00264C8B /* BottomBar.swift */; };
 		DB1C09DB28B77D7C00264C8B /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1C09DA28B77D7C00264C8B /* AudioRecorder.swift */; };
-		DB1C09DD28BCBE0D00264C8B /* Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1C09DC28BCBE0D00264C8B /* Holder.swift */; };
+		DB1C09DD28BCBE0D00264C8B /* memoHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1C09DC28BCBE0D00264C8B /* memoHolder.swift */; };
 		DB1C09DF28BF517100264C8B /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1C09DE28BF517100264C8B /* Timer.swift */; };
+		DB1C09E228C0BDC800264C8B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1C09E128C0BDC800264C8B /* AudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +55,14 @@
 		DB06171D28B27CA800022422 /* Voice_MemosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_MemosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DB06172D28B2829300022422 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		DB06172F28B2831400022422 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
-		DB06173128B2833F00022422 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		DB06173328B2854900022422 /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		DB06173C28B6013400022422 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		DB1C09D728B64CFF00264C8B /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		DB1C09D928B74D3800264C8B /* Voice-Memos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Voice-Memos-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DB1C09DA28B77D7C00264C8B /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
-		DB1C09DC28BCBE0D00264C8B /* Holder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holder.swift; sourceTree = "<group>"; };
+		DB1C09DC28BCBE0D00264C8B /* memoHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoHolder.swift; sourceTree = "<group>"; };
 		DB1C09DE28BF517100264C8B /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		DB1C09E128C0BDC800264C8B /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				DB1C09D928B74D3800264C8B /* Voice-Memos-Info.plist */,
+				DB06170428B27CA800022422 /* Assets.xcassets */,
+				DB06170028B27CA700022422 /* Voice_MemosApp.swift */,
 				DB06172A28B27CC000022422 /* Views */,
 				DB06172C28B2826B00022422 /* Model */,
-				DB06170028B27CA700022422 /* Voice_MemosApp.swift */,
-				DB06170428B27CA800022422 /* Assets.xcassets */,
+				DB1C09E028C0BD5B00264C8B /* Audio Managers */,
 				DB06170628B27CA800022422 /* Preview Content */,
 			);
 			path = "Voice Memos";
@@ -153,11 +154,9 @@
 			children = (
 				DB06170228B27CA700022422 /* ContentView.swift */,
 				DB06172F28B2831400022422 /* Row.swift */,
-				DB06173128B2833F00022422 /* Detail.swift */,
 				DB06173328B2854900022422 /* EditButton.swift */,
 				DB1C09D728B64CFF00264C8B /* BottomBar.swift */,
 				DB06173C28B6013400022422 /* RecordButton.swift */,
-				DB1C09DA28B77D7C00264C8B /* AudioRecorder.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,10 +165,19 @@
 			isa = PBXGroup;
 			children = (
 				DB06172D28B2829300022422 /* Memo.swift */,
-				DB1C09DC28BCBE0D00264C8B /* Holder.swift */,
+				DB1C09DC28BCBE0D00264C8B /* memoHolder.swift */,
 				DB1C09DE28BF517100264C8B /* Timer.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DB1C09E028C0BD5B00264C8B /* Audio Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DB1C09DA28B77D7C00264C8B /* AudioRecorder.swift */,
+				DB1C09E128C0BDC800264C8B /* AudioPlayer.swift */,
+			);
+			path = "Audio Managers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,14 +313,14 @@
 				DB06173028B2831400022422 /* Row.swift in Sources */,
 				DB1C09DB28B77D7C00264C8B /* AudioRecorder.swift in Sources */,
 				DB06173428B2854A00022422 /* EditButton.swift in Sources */,
-				DB1C09DD28BCBE0D00264C8B /* Holder.swift in Sources */,
-				DB06173228B2833F00022422 /* Detail.swift in Sources */,
+				DB1C09DD28BCBE0D00264C8B /* memoHolder.swift in Sources */,
 				DB06173D28B6013400022422 /* RecordButton.swift in Sources */,
 				DB1C09D828B64CFF00264C8B /* BottomBar.swift in Sources */,
 				DB06172E28B2829300022422 /* Memo.swift in Sources */,
 				DB06170328B27CA700022422 /* ContentView.swift in Sources */,
 				DB1C09DF28BF517100264C8B /* Timer.swift in Sources */,
 				DB06170128B27CA700022422 /* Voice_MemosApp.swift in Sources */,
+				DB1C09E228C0BDC800264C8B /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
