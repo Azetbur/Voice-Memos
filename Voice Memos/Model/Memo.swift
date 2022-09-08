@@ -2,7 +2,7 @@ import Foundation
 
 var memos: [Memo] = []
 
-struct Memo: Identifiable {
+struct Memo: Identifiable, Hashable {
     
     var id: String { fileURL.lastPathComponent.replacingOccurrences(of: ".m4a", with: "") }
     
@@ -14,4 +14,10 @@ struct Memo: Identifiable {
     
     let duration: String
     
+    let isFocused: Bool
+    
+}
+
+extension Memo {
+    static var mock: Memo = { .init(fileURL: URL(fileURLWithPath: ""), createdAt: Date(), time: "time", duration: "dutration", isFocused: true) }()
 }

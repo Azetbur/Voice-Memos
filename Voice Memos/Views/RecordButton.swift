@@ -33,13 +33,11 @@ struct RecordButton: View {
     
     var body: some View {
         Button {
-            //isAnimating = true
             withAnimation(.easeInOut) {
                 recordMode.toggle()
             }
             withAnimation(.easeOut) {
                 nibbleMode.toggle()
-                //isAnimating = false
             }
             AudioServicesPlaySystemSound(recordMode.isActive ? 1113 : 1114)
             action()

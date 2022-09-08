@@ -1,10 +1,3 @@
-//
-//  Timer.swift
-//  Voice Memos
-//
-//  Created by Jindrich Kocman on 31.08.2022.
-//
-
 import Foundation
 
 extension Double {

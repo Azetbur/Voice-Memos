@@ -2,17 +2,27 @@ import SwiftUI
 
 struct EditButton: View {
     
+    // MARK: vars
+    
+    //Wheter you are in edit mode, disables recording
     @Binding var editMode: EditMode
     
-    var action: () -> Void = {}
+    //Action to execute when edit mode is inactive and the edit button is pressed
+    var actionInactive: () -> Void = {}
+    
+    //Action to execute when edit mode is active and the edit button is pressed
+    var actionActive: () -> Void = {}
+    
+    // MARK: View
     
     var body: some View {
         Button {
             withAnimation {
                 if editMode == .active {
-                    action()
+                    actionActive()
                     editMode = .inactive
                 } else {
+                    actionInactive()
                     editMode = .active
                 }
             }
@@ -30,7 +40,6 @@ struct EditButton: View {
 struct EditButton_Previews: PreviewProvider {
     static var previews: some View {
         EditButton(editMode: .constant(.inactive))
-        EditButton(editMode: .constant(.active))
-        EditButton(editMode: .constant(.transient))
+            .preferredColorScheme(.dark)
     }
 }
