@@ -3,11 +3,23 @@ import AVFAudio
 
 class AudioRecorder {
     
+    // MARK: vars
+    
+    //Responsible for recording
     var audioRecorder: AVAudioRecorder?
     
+    //Where the recordings will be saved
     var documentPath : URL
     
+    //Settings for AVAudioRecorder
     var settings : [String : Int]
+    
+    //How long the user's been recording for
+    var currentTime : Double {
+        (audioRecorder?.currentTime ?? .zero)
+    }
+    
+    // MARK: init()
     
     init() {
         
@@ -30,9 +42,7 @@ class AudioRecorder {
         ]
     }
     
-    var currentTime : Double {
-        (audioRecorder?.currentTime ?? .zero)
-    }
+    // MARK: startRecording()
     
     func startRecording(recNum : Int) {
 
@@ -46,6 +56,8 @@ class AudioRecorder {
         audioRecorder?.record()
            
     }
+    
+    // MARK: stopRecording()
     
     func stopRecording() {
         audioRecorder?.stop()
